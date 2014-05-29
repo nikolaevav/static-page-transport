@@ -1,0 +1,177 @@
+body
+  background-color: #093A65
+  color: white
+
+a
+  color: white
+  &:hover, &:focus
+    color: white
+
+.head-nav
+  background-color: black
+  height: 146px
+  .row-head-nav
+    position: relative
+    .comment
+      position: absolute
+      top: 44px
+      left: 322px
+      .link-comment
+        display: block
+        font-size: 13px
+        text-decoration: underline
+        &::before
+          display: block
+          content: ''
+          position: absolute
+          top: 0
+          left: -28px
+          width: 19px
+          height: 18px
+          background-image: url('/images/comment-pic.png')
+
+    .map
+      position: absolute
+      top: 44px
+      left: 557px
+      .link-map
+        display: block
+        font-size: 13px
+        text-decoration: underline
+        &::before
+          display: block
+          content: ''
+          position: absolute
+          top: -3px
+          left: -25px
+          width: 15px
+          height: 21px
+          background-image: url('/images/map-pic.png')
+
+    .phone-block
+      position: absolute
+      top: 41px
+      left: 730px
+      .main-phone
+        font-size: 17px
+        letter-spacing: 0.03em
+        margin-bottom: 11px
+        span
+          color: #FFCF00
+          font-size: 18px
+          font-weight: bold
+          letter-spacing: 0.095em
+      .dop-phone
+        font-size: 17px
+        text-align: right
+    .logo-image
+      margin-right: 11px
+      padding-top: 34px
+      float: left
+    .logo-text
+      width: 194px
+      padding-top: 52px
+      float: left
+      font-family: Arial Black, san-serif
+      font-size: 24px
+      line-height: 23px
+      text-transform: uppercase
+    .nav-links
+      padding-top: 80px
+      ul
+        margin: 0
+        li
+          list-style: none
+          display: inline-block
+          margin: 0 10px 0 5px
+          a
+            text-decoration: none
+
+.title-block
+  text-transform: uppercase
+  font-family: Arial Black, serif
+  font-weight: bold
+  font-size: 30px
+  line-height: 29px
+.text-block
+  font-size: 14px
+  line-height: 22px
+  a
+    color: #FFCF00
+
+.double-block
+  min-height: 1500px
+  background-image: url('/images/bg-image-1.png')
+  background-position: center top
+  background-repeat: no-repeat
+
+  .first-row
+    padding-top: 275px
+    .carousel
+      position: relative
+      .yellow-line
+        display: table
+        position: absolute
+        top: -109px
+        left: 30px
+        width: 20px
+        height: 129px
+        background-color: #FFCF00
+        z-index: 1
+
+      .yellow-line-block
+        position: absolute
+        top: -109px
+        left: 60px
+        width: 440px
+        height: 129px
+        background-color: #FFCF00
+        z-index: 1
+        color: black
+        padding: 33px 36px
+        text-transform: uppercase
+        font-family: Arial Black, serif
+        font-weight: bold
+        font-size: 26px
+        line-height: 29px
+      .carousel-inner
+        .item
+          -webkit-border-radius: 8px
+          -moz-border-radius: 8px
+          border-radius: 8px
+          background-size: cover
+          background-position: center
+          height: 500px
+
+  .second-row
+    margin-left: -15px
+    padding-top: 139px
+    .title-block
+      margin-bottom: 35px
+    .text-block
+      padding: 5px
+
+  .third-row
+    margin-left: -15px
+    padding-top: 170px
+    .title-block
+      margin-bottom: 30px
+    .text-block
+      padding: 0
+
+  .fourth-row
+    margin-left: -15px
+    padding-top: 59px
+    .title-block
+      margin-bottom: 35px
+    .questions
+      height: 150px
+
+  .fifth-row
+    margin-left: -15px
+    .title-block
+      margin-top: 18px
+      margin-bottom: 30px
+    .text-block
+
+  .sixth-row

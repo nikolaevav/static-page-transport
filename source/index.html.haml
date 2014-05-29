@@ -1,0 +1,104 @@
+---
+title: Поставка транспорта
+body_class: main
+---
+
+.head-nav
+  .container
+    .row
+      .row-head-nav
+        .comment= link_to 'Отправить сообщение', '#', class: 'link-comment'
+        .map= link_to 'Адрес компании', '#', class: 'link-map'
+        .phone-block
+          .main-phone
+            +7 (499)
+            %span 506-75-90
+          .dop-phone+7 985-125-10-20
+        .logo-image
+          %img{ src: 'images/logo.png' }
+        .logo-text Поставка транспорта
+        .nav-links
+          %ul
+            %li= link_to 'О компании', '#'
+            %li= link_to 'Поставка', '#'
+            %li= link_to 'Выбор техники', '#'
+            %li= link_to 'Контакты', '#'
+
+.double-block
+  .container
+    .row
+      .first-row
+        #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+          .yellow-line
+          .yellow-line-block Любая спецтехника на ваш выбор!
+
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+            %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+            %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+
+          .carousel-inner
+            .item.active{ style: 'background-image: url(http://newsroom.scania.com/en-group/files/2013/03/23-exterior-13011-024.jpg)'}
+            .item{ style: 'background-image: url(http://images.trucksale.ru/upload/news/thumbxr_08848.jpg)'}
+            .item{ style: 'background-image: url(http://newsroom.scania.com/ru/files/2013/03/3-exterior-13009-001.jpg)'}
+            .item{ style: 'background-image: url(http://com-trans.net/images/2011/02/foto-scania-r_004.jpg)'}
+
+          %a.left{"data-slide" => "prev", href: "#carousel-example-generic"}
+            <
+          %a.right{"data-slide" => "next", href: "#carousel-example-generic"}
+            >
+    .row
+      .col-sm-5.col-md-5.col-sm-offset-7.col-md-offset-7
+        .second-row
+          .title-block
+            Мы доставим!
+          .text-block
+            Вам не придется долго искать, просто выбирайте технику (тут) в соответствующей категории машин, самые популярные в Европе порталы
+            по продаже Техники размещены у нас, просто скопируйте ссылка и отправьте
+            = link_to 'сообщение', '#'
+            , мы вышлем вам детальный расчет.
+            Так же Вы можете заказать себе
+            = link_to 'Звонок', '#'
+            прямо на сайте отправив короткое сообщение!
+    .row
+      .col-sm-6.col-md-6
+        .third-row
+          .title-block
+            О Сайте!
+          .text-block
+            ПОСТАВКА ТРАНСПОРТА - ваш надёжный проводник. Наш сайт, ваш рабочий стол для простого расчёта стоимости грузового транспорта, ввозимого из Европы. Вы делаете свой выбор, мы сопровождаем! Оказываем поэтапную юридическую помощь в оформлении!
+            %br
+            %br
+            = link_to '"Вопрос-ответ"', '#'
+            с часто задаваемыми вопросами, поможет Вам детально разобраться с этапами приобретения!
+
+    .row
+      .col-sm-12.col-md-12
+        .fourth-row
+          .title-block
+            ВОПРОС - ОТВЕТ
+          .questions
+            qw
+    .fifth-row
+      .row
+        .col-sm-12.col-md-12
+          .title-block
+            ПОСТАВКА
+      .row
+        .col-sm-6.col-md-6
+          .text-block
+            После получения от Вас заявки на выбранную вами технику, мы оговариваем с Вами условия предоставления наших услуг, мы делаем для вас детальный расчёт стоимости с учётом поэтапной оплаты от начала покупки до отправки к месту назначения
+            %br
+            %br
+            Последовательность поэтапной оплаты даёт возможность контролировать весь процесс Поставки. По вашему желанию вы можете напрямую участвовать в этих процессах и выбирать для себя удобный этап оплаты. Платежи за выполнение отдельных поручений идут напрямую исполнителям. Мы только организуем эти действия.
+        .col-sm-5.col-md-5.col-sm-offset-1.col-md-offset-1
+          .text-block
+            %span Поэтапная оплата:
+            Осмотр, Выкуп в Европе, доставка в РФ, таможня в РФ, ТО в РФ, оформление ПТС, доставка по РФ. Платежи осуществляются последовательно, либо напряму исполнителям (продавец в Европе, перевозчик, брокер, юрист), либо по одному лицу - Поставщику, который осуществит эти платежи.
+            %br
+            %br
+            %span Платежи:
+            Осмотр, Выкуп в Европе, доставка в РФ, таможня в РФ, ТО в РФ, оформление ПТС, доставка по РФ.
+    .row
+      .col-sm-12.col-md-12
+        .sixth-row
