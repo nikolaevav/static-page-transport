@@ -33,9 +33,12 @@ body_class: main
           .yellow-line-block Любая спецтехника на ваш выбор!
 
           %ol.carousel-indicators
-            %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
-            %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
-            %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+            %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"} Автобетононасосы
+            %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"} Автобетоносмесители
+            %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"} Автобусы
+            %li{"data-slide-to" => "3", "data-target" => "#carousel-example-generic"} Автоцистерны
+            %li.lay-first-link Вы делаете свой выбор, мы сопровождаем
+            %li.lay-secont-link Доставка из Европы транспорта заказчика. Легковые автомобили.
 
           .carousel-inner
             .item.active{ style: 'background-image: url(http://newsroom.scania.com/en-group/files/2013/03/23-exterior-13011-024.jpg)'}
@@ -43,10 +46,10 @@ body_class: main
             .item{ style: 'background-image: url(http://newsroom.scania.com/ru/files/2013/03/3-exterior-13009-001.jpg)'}
             .item{ style: 'background-image: url(http://com-trans.net/images/2011/02/foto-scania-r_004.jpg)'}
 
-          %a.left{"data-slide" => "prev", href: "#carousel-example-generic"}
-            <
-          %a.right{"data-slide" => "next", href: "#carousel-example-generic"}
-            >
+          %a.left.slide-prev{"data-slide" => "prev", href: "#carousel-example-generic"}
+            .tail-prev
+          %a.right.slide-next{"data-slide" => "next", href: "#carousel-example-generic"}
+            .tail-next
     .row
       .col-sm-5.col-md-5.col-sm-offset-7.col-md-offset-7
         .second-row
@@ -69,8 +72,16 @@ body_class: main
             ПОСТАВКА ТРАНСПОРТА - ваш надёжный проводник. Наш сайт, ваш рабочий стол для простого расчёта стоимости грузового транспорта, ввозимого из Европы. Вы делаете свой выбор, мы сопровождаем! Оказываем поэтапную юридическую помощь в оформлении!
             %br
             %br
-            = link_to '"Вопрос-ответ"', '#'
-            с часто задаваемыми вопросами, поможет Вам детально разобраться с этапами приобретения!
+            "
+            = link_to 'Вопрос-ответ', '#'
+            " с часто задаваемыми вопросами, поможет Вам детально разобраться с этапами приобретения!
+      .col-sm-5.col-md-5.col-sm-offset-1.col-md-offset-1.big-yellow-block
+        .big-yellow-line
+          .text-block
+            .count#j-counter 27000
+            %span
+              Доставлено
+          .long-line
 
     .row
       .col-sm-12.col-md-12
@@ -78,7 +89,35 @@ body_class: main
           .title-block
             ВОПРОС - ОТВЕТ
           .questions
-            qw
+            #wrapper
+              #bg
+              #carousel
+                %div
+                  = link_to '#' do
+                    .first Интересует сколько первый взнос?
+                  = link_to '#' do
+                    .second Как производится оплата?
+                  = link_to '#' do
+                    .third Какие скроки поставки?
+                %div
+                  = link_to '#' do
+                    .first Интересует сколько первый взнос?
+                  = link_to '#' do
+                    .second Как производится оплата?
+                  = link_to '#' do
+                    .third Какие скроки поставки?
+                %div
+                  = link_to '#' do
+                    .first Интересует сколько первый взнос?
+                  = link_to '#' do
+                    .second Как производится оплата?
+                  = link_to '#' do
+                    .third Какие скроки поставки?
+              %a#prev{href: "#"}
+                %span
+              %a#next{href: "#"}
+                %span
+
     .fifth-row
       .row
         .col-sm-12.col-md-12
@@ -99,6 +138,102 @@ body_class: main
             %br
             %span Платежи:
             Осмотр, Выкуп в Европе, доставка в РФ, таможня в РФ, ТО в РФ, оформление ПТС, доставка по РФ.
+
+.footer-block
+  .container
     .row
-      .col-sm-12.col-md-12
-        .sixth-row
+      .sixth-row
+        .col-sm-10.col-md-10.col-sm-offset-1.col-md-offset-1
+          .quotes-block
+            Рекомендуется осмотр техники перед покупкой в Европе Вашими силами либо общими с привлечением специалистов, по запросу клиента выполняются фото и видео отчет проверки, или получения Заключения на фирменной станции диагностики в ближайшем месте от покупки техники.
+    .row
+      .seven-row
+        .col-sm-12.col-md-12
+          .center-title-block Мы трудимся над тем, чтобы вы покупали именно то, что вам необходимо
+          .small-title-block Транспорт в Европе:
+    .row
+      .seven-row
+        .col-sm-12.col-md-12
+          .link-block.left-image
+            = link_to 'http://suchen.mobile.de/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner1.png' }
+              .text-block
+                suchen.mobile.de
+          .link-block.left-padding
+            = link_to 'http://autoline-eu.ru/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner2.png' }
+              .text-block
+                autoline-eu.ru
+          .link-block
+            = link_to 'http://www.truckscout24.ru/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner3.png' }
+              .text-block
+                truckscout24.ru
+          .link-block.right-padding
+            = link_to 'http://www.truckstore.com/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner4.png' }
+              .text-block
+                truckstore.com
+          .link-block.right-image
+            = link_to 'http://www.trucks.nl/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner5.png' }
+              .text-block
+                trucks.nl
+    .row
+      .seven-row
+        .col-sm-12.col-md-12
+          .small-title-block Транспорт в Польше:
+          .small-title-block Транспорт в Литве:
+          .small-title-block Рекомендуемые прощадки:
+        .col-sm-12.col-md-12
+          .link-block.left-image2
+            = link_to 'http://otomoto.pl/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner6.png' }
+              .text-block
+                otomoto.pl
+          .link-block.left-padding2
+            = link_to 'http://auto.plius.lt/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner7.png' }
+              .text-block
+                auto.plius.lt
+          .link-block
+            = link_to 'https://www.kleyntrucks.com/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner8.png' }
+              .text-block
+                kleyntrucks.com
+          .link-block.right-padding2
+            = link_to 'http://www.bastrucks.com/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner9.png' }
+              .text-block
+                bastrucks.com
+          .link-block.right-image2
+            = link_to 'http://www.schaftentrucks.nl/', target: '_blank' do
+              .image-block
+                %img{ src: 'images/partner10.png' }
+              .text-block
+                schaftentrucks.nl
+    .row
+      .eighth-row
+        .col-sm-4.col-md-4
+          .title-block
+            Контакты
+        .col-sm-4.col-md-4
+          .phone-block
+            .main +7 (499) 506-75-90
+            .dop +7 985-125-10-20
+        .col-sm-4.col-md-4.sm-md
+          .link-block
+            .comment= link_to 'Отправить сообщение', '#', class: 'link-comment'
+            .user= link_to 'Заказать звонок', '#', class: 'link-user'
+
+
+.google-map#j-google-map
