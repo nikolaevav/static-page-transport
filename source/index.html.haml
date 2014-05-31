@@ -3,12 +3,12 @@ title: Поставка транспорта
 body_class: main
 ---
 
-.head-nav
+.head-nav#menu
   .container
     .row
       .row-head-nav
-        .comment= link_to 'Отправить сообщение', '#', class: 'link-comment'
-        .map= link_to 'Адрес компании', '#', class: 'link-map'
+        .comment= link_to 'Отправить сообщение', '#message', class: 'link-comment', "data-toggle" => "modal"
+        .map= link_to 'Адрес компании', '#j-google-map', class: 'link-map smooth'
         .phone-block
           .main-phone
             .text +7 (499)
@@ -19,11 +19,12 @@ body_class: main
         .logo-text Поставка транспорта
         .nav-links
           %ul
-            %li= link_to 'О компании', '#'
-            %li= link_to 'Поставка', '#'
-            %li= link_to 'Выбор техники', '#'
-            %li= link_to 'Контакты', '#'
+            %li= link_to 'О компании', '#about', class: 'smooth'
+            %li= link_to 'Поставка', '#delivery', class: 'smooth'
+            %li= link_to 'Выбор техники', '#choice', class: 'smooth'
+            %li= link_to 'Контакты', '#contacts', class: 'smooth'
 
+.clear
 .double-block
   .container
     .row
@@ -53,15 +54,17 @@ body_class: main
     .row
       .col-sm-5.col-md-5.col-sm-offset-7.col-md-offset-7
         .second-row
-          .title-block
+          .title-block#about
             Мы доставим!
           .text-block
-            Вам не придется долго искать, просто выбирайте технику (тут) в соответствующей категории машин, самые популярные в Европе порталы
+            Вам не придется долго искать, просто выбирайте технику (
+            = link_to 'тут', '#choice', class: 'smooth'
+            ) в соответствующей категории машин, самые популярные в Европе порталы
             по продаже Техники размещены у нас, просто скопируйте ссылка и отправьте
-            = link_to 'сообщение', '#'
+            = link_to 'сообщение', '#message', "data-toggle" => "modal"
             , мы вышлем вам детальный расчет.
             Так же Вы можете заказать себе
-            = link_to 'Звонок', '#'
+            = link_to 'Звонок', '#callback', "data-toggle" => "modal"
             прямо на сайте отправив короткое сообщение!
     .row
       .col-sm-6.col-md-6
@@ -73,7 +76,7 @@ body_class: main
             %br
             %br
             "
-            = link_to 'Вопрос-ответ', '#'
+            = link_to 'Вопрос-ответ', '#question', class: 'smooth', id: 'question'
             " с часто задаваемыми вопросами, поможет Вам детально разобраться с этапами приобретения!
       .col-sm-5.col-md-5.col-sm-offset-1.col-md-offset-1.big-yellow-block
         .big-yellow-line
@@ -119,7 +122,7 @@ body_class: main
                 %span
 
     .fifth-row
-      .row
+      .row#delivery
         .col-sm-12.col-md-12
           .title-block
             ПОСТАВКА
@@ -148,14 +151,14 @@ body_class: main
             Рекомендуется осмотр техники перед покупкой в Европе Вашими силами либо общими с привлечением специалистов, по запросу клиента выполняются фото и видео отчет проверки, или получения Заключения на фирменной станции диагностики в ближайшем месте от покупки техники.
     .row
       .seven-row
-        .col-sm-12.col-md-12
+        .col-sm-12.col-md-12#choice
           .center-title-block Мы трудимся над тем, чтобы вы покупали именно то, что вам необходимо
           .small-title-block Транспорт в Европе:
     .row
       .seven-row
         .col-sm-12.col-md-12
           .link-block.left-image
-            = link_to 'http://suchen.mobile.de/', target: '_blank' do
+            = link_to 'http://suchen.mobile.de/fahrzeuge/search.html?scopeId=AT&lang=ru', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner1.png' }
               .text-block
@@ -179,7 +182,7 @@ body_class: main
               .text-block
                 truckstore.com
           .link-block.right-image
-            = link_to 'http://www.trucks.nl/', target: '_blank' do
+            = link_to 'http://www.trucks.nl/search.asp?languageid=14', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner5.png' }
               .text-block
@@ -192,31 +195,31 @@ body_class: main
           .small-title-block Рекомендуемые прощадки:
         .col-sm-12.col-md-12
           .link-block.left-image2
-            = link_to 'http://otomoto.pl/', target: '_blank' do
+            = link_to 'http://otomoto.pl/dostawcze-i-ciezarowe', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner6.png' }
               .text-block
                 otomoto.pl
           .link-block.left-padding2
-            = link_to 'http://auto.plius.lt/', target: '_blank' do
+            = link_to 'http://ru.auto.plius.lt/poisk/b-u-avtomobili', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner7.png' }
               .text-block
                 auto.plius.lt
           .link-block
-            = link_to 'https://www.kleyntrucks.com/', target: '_blank' do
+            = link_to 'https://ru.kleyntrucks.com/', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner8.png' }
               .text-block
                 kleyntrucks.com
           .link-block.right-padding2
-            = link_to 'http://www.bastrucks.com/', target: '_blank' do
+            = link_to 'http://ru.bastrucks.com/', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner9.png' }
               .text-block
                 bastrucks.com
           .link-block.right-image2
-            = link_to 'http://www.schaftentrucks.nl/', target: '_blank' do
+            = link_to 'http://www.schaftentrucks.nl/ru', target: '_blank' do
               .image-block
                 %img{ src: 'images/partner10.png' }
               .text-block
@@ -224,7 +227,7 @@ body_class: main
     .row
       .eighth-row
         .col-sm-4.col-md-4
-          .title-block
+          .title-block#contacts
             Контакты
         .col-sm-4.col-md-4
           .phone-block
@@ -232,8 +235,64 @@ body_class: main
             .dop +7 985-125-10-20
         .col-sm-4.col-md-4.sm-md
           .link-block
-            .comment= link_to 'Отправить сообщение', '#', class: 'link-comment'
-            .user= link_to 'Заказать звонок', '#', class: 'link-user'
+            .comment= link_to 'Отправить сообщение', '#message', class: 'link-comment', "data-toggle" => "modal"
+            .user= link_to 'Заказать звонок', '#callback', class: 'link-user', "data-toggle" => "modal"
 
 
+.google-alert
+  .map-alert
+    Офис и склад
+    %span "ПОСТАВКА ТРАНСПОРТА"
+    236039, г Калининград, ул Суворова, 44"
 .google-map#j-google-map
+#callback.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog"}
+  %form.simple_form.subscriber{"accept-charset" => "UTF-8", action: "/callback.php", "data-remote" => "true", method: "post"}
+    .modal-dialog.simple-modal
+      .modal-content
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+        .modal-header
+          .modal-title Заказать звонок ––
+        .modal-body
+          .form-group.string.required
+            %label.string.required.control-label
+              %abbr{title: "Обязательное для заполнения поле"} *
+              Имя
+            %input.string.required.form-control{"aria-required" => "true", name: "11F1A3A9CC1486DFFECC0F35334CDF16FAEF863D", required: "required", type: "text"}
+          .form-group.required
+            %label.required.control-label
+              %abbr{title: "Обязательное для заполнения поле"} *
+              № телефона:
+            %input.string.required.form-control.form-control{"aria-required" => "true", name: "8835E3D5DF64178F370BF9F841ECF54D5D8D079D", required: "required", type: "phone"}
+        .modal-footer
+          %input.btn{name: "commit", type: "submit", value: "Отправить"}
+
+#message.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog"}
+  %form.simple_form.subscriber{"accept-charset" => "UTF-8", action: "/message.php", "data-remote" => "true", method: "post"}
+    .modal-dialog.message-modal
+      .modal-content
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+        .modal-header
+          .modal-title Напишите нам
+        .modal-body
+          .row
+            .col-sm-6.col-md-6
+              .form-group.name.string.required
+                %label.string.required.control-label
+                  Ваше Имя:
+                %input.string.required.form-control{"aria-required" => "true", name: "message[name]", required: "required", type: "text"}
+              .form-group.phonoemail.required
+                %label.required.control-label
+                  Ваш email \ телефон:
+                %input.string.required.form-control.form-control{"aria-required" => "true", name: "message[email]", required: "required", type: "text"}
+              .form-group.title.required
+                %label.required.control-label
+                  Тема сообщения:
+                %input.string.required.form-control.form-control{"aria-required" => "true", name: "message[title]", required: "required", type: "text"}
+            .col-sm-6.col-md-6
+              .form-group.text.required
+                %label.required.control-label
+                  Текст сообщения:
+                %textarea.required.form-control{"aria-required" => "true", name: "comment[content]", required: "required", rows: "6"}
+
+        .modal-footer
+          %input.btn{name: "commit", type: "submit", value: "Отправить сообщение"}

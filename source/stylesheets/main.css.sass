@@ -85,7 +85,7 @@ a
         li
           list-style: none
           display: inline-block
-          margin: 0 10px 0 5px
+          margin: 0 13px 0 5px
           a
             text-decoration: none
 
@@ -456,7 +456,179 @@ a
 
 .google-map
   height: 450px
+.google-alert
+  position: relative
+  .map-alert
+    width: 400px
+    position: absolute
+    top: 320px
+    right: 20px
+    padding: 30px 40px
+    background-color: black
+    background-color: rgba(0, 0, 0, 0.6)
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    z-index: 5
+    span
+      font-weight: bold
+      font-size: 15
+      color: #FFCF00
 
+
+.menu-fixed
+  height: 125px
+  background-color: rgba(0,0,0, 0.9)
+  position: fixed
+  top: -25px
+  width: 100%
+  left: 0
+  right: 0
+  z-index: 60
+  margin: 0
+
+.simple-modal
+  width: 413px
+  .modal-content
+    position: relative
+    padding: 28px 40px 20px 40px
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    background-color: #F3F3F3
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F3F3F3), color-stop(1, #DCE1E6))
+    background-image: -o-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: -moz-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: -webkit-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: -ms-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: linear-gradient(to bottom, #F3F3F3 0%, #DCE1E6 100%)
+    button
+      position: absolute
+      width: 40px
+      right: 0
+      top: 47px
+      background-color: #FFBC00
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFBC00), color-stop(1, #FF9D00))
+      background-image: -o-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: -moz-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: -webkit-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: -ms-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: linear-gradient(to bottom, #FFBC00 0%, #FF9D00 100%)
+      -webkit-border-radius: 3px 0 0 3px
+      -moz-border-radius: 3px 0 0 3px
+      border-radius: 3px 0 0 3px
+      opacity: 1
+    .modal-header
+      border-bottom: 0
+      padding: 15px 29px
+      .modal-title
+        color: black
+        width: 98%
+        font-size: 19px
+        font-weight: bold
+    .modal-body
+      padding: 3px 21px 0px 29px
+      .form-group
+        margin-bottom: 11px
+        label
+          color: black
+          font-size: 13px
+        input, textarea
+          -webkit-border-radius: 6px
+          -moz-border-radius: 6px
+          border-radius: 6px
+    .modal-footer
+      border-top: 0
+      margin: 0 -60px
+      .btn
+        width: 100%
+        background-color: #FFBC00
+        border-radius: 0
+        text-transform: uppercase
+        color: black
+        font-weight: bold
+
+.message-modal
+  width: 900px
+  .modal-content
+    position: relative
+    padding: 28px 40px 20px 40px
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    background-color: #F3F3F3
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F3F3F3), color-stop(1, #DCE1E6))
+    background-image: -o-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: -moz-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: -webkit-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: -ms-linear-gradient(bottom, #F3F3F3 0%, #DCE1E6 100%)
+    background-image: linear-gradient(to bottom, #F3F3F3 0%, #DCE1E6 100%)
+    button
+      position: absolute
+      width: 40px
+      right: 0
+      top: 47px
+      background-color: #FFBC00
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFBC00), color-stop(1, #FF9D00))
+      background-image: -o-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: -moz-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: -webkit-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: -ms-linear-gradient(bottom, #FFBC00 0%, #FF9D00 100%)
+      background-image: linear-gradient(to bottom, #FFBC00 0%, #FF9D00 100%)
+      -webkit-border-radius: 3px 0 0 3px
+      -moz-border-radius: 3px 0 0 3px
+      border-radius: 3px 0 0 3px
+      opacity: 1
+    .modal-header
+      border-bottom: 0
+      padding: 15px 29px
+      .modal-title
+        color: black
+        width: 98%
+        font-size: 19px
+        font-weight: bold
+    .modal-body
+      padding: 3px 21px 0px 29px
+      .name, .phonoemail, .title, .text
+        position: relative
+        label
+          position: absolute
+          top: 10px
+          left: 10px
+      .name
+        input
+          padding-left: 85px
+      .phonoemail
+        input
+          padding-left: 155px
+      .title
+        input
+          padding-left: 125px
+      .text
+        textarea
+          padding-top: 28px
+      .form-group
+        margin-bottom: 11px
+        label
+          color: black
+          font-size: 13px
+        input, textarea
+          -webkit-border-radius: 6px
+          -moz-border-radius: 6px
+          border-radius: 6px
+        textarea
+          height: 124px
+    .modal-footer
+      border-top: 0
+      margin: 0 -60px
+      .btn
+        margin-top: 20px
+        width: 100%
+        background-color: #FFBC00
+        border-radius: 0
+        text-transform: uppercase
+        color: black
+        font-weight: bold
 
 #wrapper
   width: 990px
