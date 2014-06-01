@@ -2,7 +2,8 @@
 title: Поставка транспорта
 body_class: main
 ---
-.alert-message
+.alert-block
+  .alert-message-true
 
 .head-nav#menu
   .container
@@ -378,14 +379,14 @@ body_class: main
             %label.string.required.control-label
               %abbr{title: "Обязательное для заполнения поле"} *
               Имя
-            %input.string.required.form-control{"aria-required" => "true", name: "11F1A3A9CC1486DFFECC0F35334CDF16FAEF863D", required: "required", type: "text"}
+            %input.string.required.form-control.j-callback-name{"aria-required" => "true", name: "name", required: "required", type: "text"}
           .form-group.required
             %label.required.control-label
               %abbr{title: "Обязательное для заполнения поле"} *
               № телефона:
-            %input.string.required.form-control.form-control{"aria-required" => "true", name: "8835E3D5DF64178F370BF9F841ECF54D5D8D079D", required: "required", type: "phone"}
+            %input.string.required.form-control.form-control.j-callback-phone{"aria-required" => "true", name: "phone", required: "required", type: "phone"}
         .modal-footer
-          %input.btn{name: "commit", type: "submit", value: "Отправить"}
+          %input.btn.j-callback-send{name: "commit", type: "submit", value: "Отправить"}
 
 #message.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog"}
   %form.simple_form.subscriber{"accept-charset" => "UTF-8", action: "/message.php", "data-remote" => "true", method: "post"}
@@ -400,23 +401,23 @@ body_class: main
               .form-group.name.string.required
                 %label.string.required.control-label
                   Ваше Имя:
-                %input.string.required.form-control{"aria-required" => "true", name: "4a545eea722cf0ae1033bdb91b861d81", required: "required", type: "text"}
+                %input.string.required.form-control.j-message-name{"aria-required" => "true", name: "name", required: "required", type: "text"}
               .form-group.phonoemail.required
                 %label.required.control-label
                   Ваш email \ телефон:
-                %input.string.required.form-control.form-control{"aria-required" => "true", name: "cab0d407c2f90da0f7956cb2155f6f26", required: "required", type: "text"}
+                %input.string.required.form-control.form-control.j-message-phone{"aria-required" => "true", name: "phonomail", required: "required", type: "text"}
               .form-group.title.required
                 %label.required.control-label
                   Тема сообщения:
-                %input.string.required.form-control.form-control{"aria-required" => "true", name: "d244447c221924b34cda6065bd61bb9c", required: "required", type: "text"}
+                %input.string.required.form-control.form-control.j-message-title{"aria-required" => "true", name: "title", required: "required", type: "text"}
             .col-sm-6.col-md-6
               .form-group.text.required
                 %label.required.control-label
                   Текст сообщения:
-                %textarea.required.form-control{"aria-required" => "true", name: "aebf1289d1d0ad50b8b4c302245dd1f9", required: "required", rows: "6"}
+                %textarea.required.form-control.j-message-text{"aria-required" => "true", name: "message", required: "required", rows: "6"}
 
         .modal-footer
-          %input.btn{name: "commit", type: "submit", value: "Отправить сообщение"}
+          %input.btn.j-message-send{name: "commit", type: "submit", value: "Отправить сообщение"}
 
 #question1.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog"}
   .modal-dialog.simple-modal
