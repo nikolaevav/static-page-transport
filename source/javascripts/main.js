@@ -29,4 +29,8 @@ jQuery(document).ready(function(){
       $("#menu").removeClass("menu-fixed");
     }
   });
+
+  $('.carousel').carousel({
+    interval: 500000
+  });
 });
