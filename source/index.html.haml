@@ -34,6 +34,9 @@ body_class: main
         #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
           .yellow-line
           .yellow-line-block Любая спецтехника на ваш выбор!
+          .currency-block
+            .title Курсы валют:
+            #currency
 
           .carousel-inner
             .item.active{ style: 'background-image: url(images/slider1.png)'}
@@ -189,7 +192,7 @@ body_class: main
       .col-sm-5.col-md-5.col-sm-offset-1.col-md-offset-1.big-yellow-block
         .big-yellow-line
           .text-block
-            .count#j-counter 0
+            .count#j-counter 120
             %span
               Доставлено
           .long-line
@@ -261,7 +264,7 @@ body_class: main
       .sixth-row
         .col-sm-10.col-md-10.col-sm-offset-1.col-md-offset-1
           .quotes-block
-            Рекомендуется осмотр техники перед покупкой в Европе Вашими силами либо общими с привлечением специалистов, по запросу клиента выполняются фото и видео отчет проверки, или получения Заключения на фирменной станции диагностики в ближайшем месте от покупки техники.
+            Рекомендуется осмотр техники перед покупкой в Европе Вашими силами либо общими, с привлечением специалистов. По запросу клиента выполняются фото и видео отчеты проверки и получение Заключения на фирменной станции диагностики в ближайшем месте от покупки техники.
     .row
       .seven-row
         .col-sm-12.col-md-12#choice
@@ -275,7 +278,7 @@ body_class: main
               .image-block
                 %img{ src: 'images/partner1.png' }
               .text-block
-                suchen.mobile.de
+                mobile.de
           .link-block.left-padding
             = link_to 'http://autoline-eu.ru/', target: '_blank' do
               .image-block
@@ -318,7 +321,7 @@ body_class: main
               .image-block
                 %img{ src: 'images/partner7.png' }
               .text-block
-                auto.plius.lt
+                plius.lt
           .link-block
             = link_to 'https://ru.kleyntrucks.com/', target: '_blank' do
               .image-block
@@ -363,7 +366,7 @@ body_class: main
   .map-alert
     Офис и склад
     %span "ПОСТАВКА ТРАНСПОРТА"
-    236039, г Калининград, ул Суворова, 44"
+    236039, г Калининград, ул Суворова, 44*
 .google-map#j-google-map
 #callback.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog"}
   %form.simple_form.subscriber{"accept-charset" => "UTF-8", action: "/callback.php", "data-remote" => "true", method: "post"}
