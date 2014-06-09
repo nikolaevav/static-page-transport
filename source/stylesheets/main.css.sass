@@ -70,6 +70,10 @@ a
       margin-right: 11px
       padding-top: 34px
       float: left
+      .logo-img-small
+        display: none
+    .logo-img-big
+      width: 280px
     .logo-text
       width: 194px
       padding-top: 52px
@@ -1036,7 +1040,9 @@ a
 @media (min-width: 200px) and (max-width: 767px)
   .head-nav
     .row-head-nav
-      .logo-text
+      .logo-img-small
+        display: inline !important
+      .logo-img-big
         display: none
   .big-yellow-block
     .big-yellow-line
@@ -1056,6 +1062,8 @@ a
       .logo-text
         width: 140px
         font-size: 15px
+      .logo-img-big
+        width: 220px
       .nav-links
         ul
           li
